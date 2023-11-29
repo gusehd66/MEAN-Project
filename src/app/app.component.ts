@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Post } from './posts/post.model';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <app-header></app-header>
+    <main>
+      <app-post-create></app-post-create>
+      <app-post-list></app-post-list>
+    </main>
+  `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-food-app';
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "피자",
+    "category": "패스트푸드",
+    "lastEaten": "2023-11-26",
+    "tasteScore": 9
+  },
+  {
+    "name": "햄버거",
+    "category": "패스트푸드",
+    "lastEaten": "2023-11-25",
+    "tasteScore": 8
+  },
+  {
+    "name": "김치찌개",
+    "category": "한식",
+    "lastEaten": "2023-11-24",
+    "tasteScore": 10
+  },
+  {
+    "name": "초밥",
+    "category": "일식",
+    "lastEaten": "2023-11-23",
+    "tasteScore": 9.5
+  }
+]
