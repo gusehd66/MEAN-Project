@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatFormFieldModule } from "@angular/material/form-field";
-import { PostService } from './posts/post.service';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { PostService } from './posts/post.service';
     MatToolbarModule,
     MatExpansionModule,
     MatFormFieldModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
