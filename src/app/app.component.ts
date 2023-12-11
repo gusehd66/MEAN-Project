@@ -6,8 +6,9 @@ import { Post } from './posts/post.model';
   template: `
     <app-header></app-header>
     <main>
-      <app-post-create></app-post-create>
-      <app-post-list></app-post-list>
+        <router-outlet></router-outlet>
+      <!-- <app-post-create></app-post-create>
+      <app-post-list></app-post-list> -->
     </main>
   `,
   styleUrls: ['./app.component.css']

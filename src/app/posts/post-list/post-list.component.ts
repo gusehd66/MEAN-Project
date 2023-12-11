@@ -14,7 +14,7 @@ import {Subscription} from "rxjs";
       <p>{{ post.content}}</p>
       <mat-action-row>
         <button mat-button color="primary">EDIT</button>
-        <button mat-button color="warn">DELETE</button>
+        <button mat-button color="warn" (click)="onDelete([post.id])">DELETE</button>
       </mat-action-row>
     </mat-expansion-panel>
    </mat-accordion>
@@ -27,7 +27,10 @@ export class PostListComponent implements OnInit, OnDestroy {
   private postSub: Subscription;
 
   constructor(private postService: PostService) {
+  }
 
+  onDelete(postId: string) {
+    this.postService.deletePost(postId);
   }
 
   ngOnInit(): void {
