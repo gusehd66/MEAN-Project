@@ -5,19 +5,21 @@ import { Component } from "@angular/core";
   template: `
   <mat-toolbar color="primary">
     <span>
-      <a routerLink="">
+      <a routerLink="/">
         MyMessages
       </a>
     </span>
+    <span class="spacer"></span>
     <ul>
       <li>
-        <a routerLink="/create">
+        <a mat-button routerLink="/create" routerLinkActive="mat-accent">
           New Post
         </a>
       </li>
     </ul>
   </mat-toolbar>
   `,
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
 
